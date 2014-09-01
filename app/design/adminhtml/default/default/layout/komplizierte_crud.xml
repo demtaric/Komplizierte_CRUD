@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <layout>
     <komplizierte_crud_index>
-
+        <reference name="content">
+            <block type="komplizierte_crud/adminhtml_images" name="images.grid_container" />
+        </reference>
     </komplizierte_crud_index>
+
+    <komplizierte_crud_edit>
+        <reference name="content">
+            <block type="komplizierte_crud/adminhtml_edit" name="images.edit" />
+        </reference>
+    </komplizierte_crud_edit>
+
+    <komplizierte_crud_new>
+        <update handle="komplizierte_crud_edit" />
+    </komplizierte_crud_new>
 </layout>
