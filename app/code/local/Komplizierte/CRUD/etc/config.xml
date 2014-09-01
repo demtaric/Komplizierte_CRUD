@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Komplizierte_CRUD>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Komplizierte_CRUD>
     </modules>
     <global>
@@ -13,6 +13,11 @@
             </komplizierte_crud>
             <komplizierte_crud_resource>
                 <class>Komplizierte_CRUD_Model_Resource</class>
+                <entities>
+                    <image>
+                        <table>komplizierte_images</table>
+                    </image>
+                </entities>
             </komplizierte_crud_resource>
         </models>
         <blocks>
@@ -30,7 +35,20 @@
                 <setup>
                     <module>Komplizierte_CRUD</module>
                 </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
             </komplizierte_crud_setup>
+            <komplizierte_crud_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </komplizierte_crud_write>
+            <komplizierte_crud_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </komplizierte_crud_read>
         </resources>
     </global>
     <adminhtml>
