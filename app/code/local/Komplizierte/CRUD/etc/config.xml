@@ -33,4 +33,31 @@
             </komplizierte_crud_setup>
         </resources>
     </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <komplizierte_crud>
+                    <file>komplizierte_crud.xml</file>
+                </komplizierte_crud>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <komplizierte_crud>
+                    <files>Komplizierte_CRUD.csv</files>
+                </komplizierte_crud>
+            </modules>
+        </translate>
+    </adminhtml>
+    <admin>
+        <routers>
+            <komplizierte>
+                <use>admin</use>
+                <args>
+                    <module>Komplizierte_CRUD</module>
+                    <frontName>crud</frontName>
+                </args>
+            </komplizierte>
+        </routers>
+    </admin>
 </config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <komplizierte translate="title" module="komplizierte_crud">
+            <title>Komplizierte CRUD</title>
+            <sort_order>80</sort_order>
+            <action>komplizierte/crud</action>
+        </komplizierte>
+    </menu>
+</config>
